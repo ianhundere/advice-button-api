@@ -26,6 +26,7 @@ ol {
     text-align: center;
     margin: 20px;
     padding: 10px;
+    position: absolute;
 }
 button {
     display: flex;
@@ -36,6 +37,12 @@ button {
     height:40px;
     margin: 10px;
     border-radius: 10%;
+}
+.img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 @media (min-width: 500px) {
