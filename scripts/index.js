@@ -44,7 +44,7 @@ const triggerElementImg = document.querySelector('[data-triggerImg]');
 const outputElementImg = document.querySelector('[data-outputImg]');
 
 function getHero() {
-    fetch('https://pixabay.com/api/?key=10424289-561cb90cf88816a7238a655ad&q=magic&image_type=photo')
+    fetch(`https://pixabay.com/api/${API_KEY}&q=magic&image_type=photo`)
       .then(convertToJson)
       .then(extractHeroImage)
       .then(drawHero);
