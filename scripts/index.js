@@ -44,15 +44,15 @@ const triggerElementImg = document.querySelector('[data-triggerImg]');
 const outputElementImg = document.querySelector('[data-outputImg]');
 
 function getHero() {
-    fetch(`https://pixabay.com/api/${API_KEY}&q=magic&image_type=photo`)
+    fetch(`https://pixabay.com/api/${API_KEY}&q=aware&image_type=photo`)
       .then(convertToJson)
       .then(extractHeroImage)
       .then(drawHero);
 }
 
 function extractHeroImage(heroObj) {
-    random = Math.floor(Math.random() * 30) + 1;  
-    return heroObj.hits[random].userImageURL;
+    random = Math.floor(Math.random() * 50) + 1;  
+    return heroObj.hits[random].webformatURL;
 }
 
 function drawHero(heroImg) {
